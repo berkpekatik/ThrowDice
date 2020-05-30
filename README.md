@@ -1,6 +1,6 @@
 # ThrowDice
 ![how to use](http://berkpekatik.com/gif/zar.gif)
-<p>Download <a href="">here</a></p>
+<p>Download <a href="https://github.com/vnoisy/ThrowDice/releases/download/0.1/dice.rar">here</a></p>
 You can use global trigger events<br>
 <h2>C#</h2>
 TriggerEvent("Dice:Zar"); // rolling 2,12 dice<br/>
