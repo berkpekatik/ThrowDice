@@ -1,5 +1,5 @@
 # ThrowDice
-![how to use](http://berkpekatik.com/gif/zar.gif)
+![how to use](https://github.com/vnoisy/ThrowDice/blob/master/gif/zar.gif)
 <p>Download <a href="https://github.com/vnoisy/ThrowDice/releases/download/0.1/dice.rar">here</a></p>
 You can use global trigger events<br>
 <h2>C#</h2>
