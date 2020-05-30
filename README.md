@@ -1,0 +1,2 @@
+# ThrowDice
+for the fivem
