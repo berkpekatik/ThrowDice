@@ -8,9 +8,9 @@ TriggerEvent("Dice:ZarAt",2,12); // rolling provided number<br/>
 TriggerEvent("Dice:ZarListe"); // giving previous roll dice list<br/>
   
 <h2>LUA</h2>
-TriggerEvent("Dice:Zar") // rolling 2,12 dice<br/>
-TriggerEvent("Dice:ZarAt",2,12) // rolling provided number<br/>
-TriggerEvent("Dice:ZarListe") // giving previous roll dice list  <br/>
+TriggerEvent("Dice:Zar") -- rolling 2,12 dice<br/>
+TriggerEvent("Dice:ZarAt",2,12) -- rolling provided number<br/>
+TriggerEvent("Dice:ZarListe") -- giving previous roll dice list  <br/>
   
 <h2>JS</h2>
 emit("Dice:Zar") // rolling 2,12 dice<br/>
