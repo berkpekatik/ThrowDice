@@ -18,3 +18,6 @@ emit("Dice:ZarAt",2,12) // rolling provided number<br/>
 emit("Dice:ZarListe") // giving previous roll dice list<br/>
   
 or use with chat commands ( /zar, /zarliste)
+
+Futures;
+Dice notices thrown will be organized and customized
