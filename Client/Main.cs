@@ -19,7 +19,9 @@ namespace Client
         {
             RegisterCommand("zar", new Action(Dice), false);
             RegisterCommand("zarliste", new Action(OldDices), false); //chat commands
-            EventHandlers["Dice:ZarAt"] += new Action(Dice);
+
+            EventHandlers["Dice:ZarAt"] += new Action<int, int>(DiceCustom);
+            EventHandlers["Dice:Zar"] += new Action(Dice);
             EventHandlers["Dice:ZarListe"] += new Action(OldDices); //Global event handlers 
             Tick += OnTick;
         }
@@ -54,6 +56,31 @@ namespace Client
             }
         }
 
+        private async void DiceCustom(int start, int end)
+        {
+            if (p.IsInVehicle() || p.IsDead || p.IsCuffed || p.IsClimbing || p.IsInHeli || p.IsInFlyingVehicle || p.IsJumping || p.IsFalling || p.IsDiving || p.IsSwimming)
+            {
+                ChatSendMessage("Zar", "Şuanda Zar Atamazsın!");
+                return;
+            }
+            if (gameAllreadyStart)
+            {
+                ChatSendMessage("Zar", "Şuan zaten zar atıyorsun!");
+                return;
+            }
+            gameAllreadyStart = true;
+            randomNumber = 0;
+            var random = new Random();
+            var newRandom = random.Next(start, end);
+            OldDiceList.Add(newRandom.ToString());
+            p.Task.PlayAnimation("anim@mp_player_intcelebrationmale@wank", "wank", 8.0f, -1, AnimationFlags.None);
+            await Delay(3000);
+            p.Task.ClearAll();
+            randomNumber = newRandom;
+            await Delay(3000);
+            randomNumber = null;
+            gameAllreadyStart = false;
+        }
         private async void Dice()
         {
             if (p.IsInVehicle() || p.IsDead || p.IsCuffed || p.IsClimbing || p.IsInHeli || p.IsInFlyingVehicle || p.IsJumping || p.IsFalling || p.IsDiving)
