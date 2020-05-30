@@ -1,5 +1,5 @@
 # ThrowDice
-<img src="http://berkpekatik.com/gif/zar.gif" title="how to use?">
+![how to use](http://berkpekatik.com/gif/zar.gif)
 <p>Download <a href="">here</a></p>
 You can use global trigger events<br>
 <h2>C#</h2>
