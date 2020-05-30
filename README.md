@@ -19,5 +19,5 @@ emit("Dice:ZarListe") // giving previous roll dice list<br/>
   
 or use with chat commands ( /zar, /zarliste)
 
-Futures;
+<h2>Futures</h2>
 Dice notices thrown will be organized and customized
