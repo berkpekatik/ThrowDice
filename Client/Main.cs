@@ -27,7 +27,7 @@ namespace Client
         }
 
         private void OldDices()
-        { 
+        {
             if (gameAllreadyStart)
             {
                 ChatSendMessage("Zar", "Zar atarken listeye bakamazsın!");
