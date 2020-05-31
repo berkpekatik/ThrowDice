@@ -5,7 +5,7 @@ You can use global trigger events<br>
 <h2>C#</h2>
 TriggerEvent("Dice:Zar"); // rolling 2,12 dice<br/>
 TriggerEvent("Dice:ZarAt",2,12); // rolling provided number<br/>
-TriggerEvent("Dice:ZarListe"); // giving previous roll dice list<br/>
+TriggerEvent("Dice:ZarListe"); // giving previous rolling dice list<br/>
   
 <h2>LUA</h2>
 TriggerEvent("Dice:Zar") -- rolling 2,12 dice<br/>
